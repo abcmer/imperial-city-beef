@@ -1,5 +1,5 @@
 # LEARNING OBJECTIVES
 
--   Design ERP data model for hot dog distributer
+-   Design ERP system with postgres backend
 -   Production grade security
 -   Company authentication/sign in
