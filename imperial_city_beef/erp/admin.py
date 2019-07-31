@@ -5,7 +5,8 @@ from .models import (
     InventoryMovement,
     Customer,
     SalesOrder,
-    SalesOrderDetail
+    SalesOrderDetail,
+    Cart
 )
 
 admin.site.register(Product)
@@ -13,3 +14,4 @@ admin.site.register(InventoryMovement)
 admin.site.register(Customer)
 admin.site.register(SalesOrder)
 admin.site.register(SalesOrderDetail)
+admin.site.register(Cart)

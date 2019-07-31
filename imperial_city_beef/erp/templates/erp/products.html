@@ -1,9 +1,10 @@
 {% extends 'erp/base.html' %}
 {% block content %}
     {% if products %}
-        <ul>
+        <ul class="list-group">
         {% for product in products %}
-            <li><a href="{% url 'erp:product_detail' product.id %}">{{ product.name }}</a></li>
+            <li class="list-group-item">
+                <a href="{% url 'erp:product_detail' product.id %}">{{ product.name }}</a></li>
         {% endfor %}
         </ul>
     {% else %}

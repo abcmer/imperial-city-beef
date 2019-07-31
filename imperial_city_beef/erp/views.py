@@ -3,7 +3,7 @@ from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 
 
-from .models import Product
+from .models import Product, Cart
 
 def index(request):
     return render(request, 'erp/index.html')
@@ -21,4 +21,11 @@ def product_detail(request, product_id):
         return render(request, 'erp/product_detail.html', context)
     except Product.DoesNotExist:
         raise Http404('Product does not exist')
+
+def cart(request):
+    cart_items = Cart.objects.filter(customer_id='9e4cdba9-17db-4c8e-87d0-df28ad428c79').select_related('product')    
+    context = {'cart_items': cart_items}
+    return render(request, 'erp/cart.html', context)        
+
+
     

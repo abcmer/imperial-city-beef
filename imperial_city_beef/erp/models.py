@@ -39,7 +39,17 @@ class SalesOrderDetail(models.Model):
     count = models.IntegerField()
 
     def __str__(self):
-        return f'Sales Order Detail: {self.sales_order.id}'    
+        return f'Sales Order Detail: {self.sales_order.id}' 
+
+class Cart(models.Model):
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)   
+    count = models.IntegerField()
+
+    def __str__(self):
+        return f"{self.count} {self.product}"
+
+
 
 
 
