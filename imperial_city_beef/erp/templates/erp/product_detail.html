@@ -1,5 +1,8 @@
-{% if product %}
-    <p>You are looking at {{ product.name }}</p>
-{% else %}
-    <p>No products are available.</p>
-{% endif %}
+{% extends 'erp/base.html' %}
+{% block content %}
+    {% if product %}
+        <p>You are looking at {{ product.name }}</p>
+    {% else %}
+        <p>No products are available.</p>
+    {% endif %}
+{% endblock %}

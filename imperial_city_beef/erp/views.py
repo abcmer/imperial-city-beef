@@ -5,9 +5,9 @@ from django.http import HttpResponse
 
 from .models import Product
 
-
 def index(request):
-    return HttpResponse("Welcome to Imperial City Beef")
+    return render(request, 'erp/index.html')
+    # return HttpResponse("Welcome to Imperial City Beef")
 
 def products(request):
     products = Product.objects.all()    
