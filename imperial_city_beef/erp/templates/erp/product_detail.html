@@ -1,0 +1,9 @@
+{% extends 'erp/base.html' %}
+{% block content %}
+    {% if product %}
+        <h1>{{ product.name }}</h1>
+        <button type="button" class="btn btn-secondary">Add to Cart</button>
+    {% else %}
+        <p>No products are available.</p>
+    {% endif %}
+{% endblock %}

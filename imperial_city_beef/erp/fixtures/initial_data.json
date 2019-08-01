@@ -1,0 +1,22 @@
+[
+    {
+        "model": "erp.product",
+        "pk": "c4eece54-3152-49ac-a29b-e55eab89a828",
+        "fields": { "name": "Beef Franks 16 Pack", "price": "14.99" }
+    },
+    {
+        "model": "erp.product",
+        "pk": "eb1c042a-e7b4-41d7-9a2a-5b3f1c90020a",
+        "fields": { "name": "Poppy Seed Buns 8 Pack", "price": "4.99" }
+    },
+    {
+        "model": "erp.customer",
+        "pk": "ab3cb7e8-12a8-4c9a-9c51-21e8925dd70f",
+        "fields": {
+            "name": "Joe Dirt",
+            "email": "joedirt@gmail.com",
+            "shipping_address": "123 Main St., Baton Rouge, LA",
+            "phone_number": "555-555-5555"
+        }
+    }
+]
