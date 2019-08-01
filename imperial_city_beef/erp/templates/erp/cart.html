@@ -16,7 +16,7 @@
         {% for item in cart_items %}  
             <tr>
             <td>{{item}}</td>
-            <td>9.99</td>
+            <td>{{item.product.price}}</td>
             <td>1</td>
             <td><button type="button" class="btn btn-danger">X</button></td>
             </tr>           
