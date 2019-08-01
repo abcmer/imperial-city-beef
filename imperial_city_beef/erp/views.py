@@ -22,10 +22,19 @@ def product_detail(request, product_id):
     except Product.DoesNotExist:
         raise Http404('Product does not exist')
 
-def cart(request):
-    cart_items = Cart.objects.filter(customer_id='ab3cb7e8-12a8-4c9a-9c51-21e8925dd70f').select_related('product') 
-    context = {'cart_items': cart_items}
-    return render(request, 'erp/cart.html', context)        
+def cart(request, customer_id):
+    cart_items = Cart.objects.filter(customer_id=customer_id).select_related('product') 
+    context = {
+        'cart_items': cart_items,
+        'customer_id': customer_id
+        }
+    return render(request, 'erp/cart.html', context)   
+
+
+def checkout(request, customer_id):
+    Cart.objects.filter(customer_id=customer_id).delete()
+    context = {}
+    return render(request, 'erp/checkout.html', context)   
 
 
     

@@ -1,7 +1,9 @@
 {% extends 'erp/base.html' %}
 {% block content %}
 {% if cart_items %}
-<table class="table">
+<form action="{% url 'erp:checkout' 'ab3cb7e8-12a8-4c9a-9c51-21e8925dd70f' %}" method="post">
+    {% csrf_token %}
+    <table class="table">
     <thead>
         <tr>
         <th scope="col">Product</th>
@@ -21,8 +23,11 @@
         {% endfor %}
     </tbody>
     </table>
-    <button type="button" class="btn btn-primary">Checkout</button>
+    <input class="btn btn-primary" type="submit" value="Checkout">
+</form>
     {% else %}
-        <p>No products are available.</p>
+        <div class="alert alert-warning" role="alert">
+            Cart is empty
+        </div>
     {% endif %}
 {% endblock %}
