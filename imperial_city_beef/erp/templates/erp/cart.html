@@ -1,18 +1,27 @@
 {% extends 'erp/base.html' %}
 {% block content %}
-    {% if cart_items %}
-        <ul class="list-group">
-        {% for item in cart_items %}             
-            <li class="list-group-item">
-                <a href="{% url 'erp:product_detail' item.product_id %}">{{ item }}</a>
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary">Edit</button>
-                    <button type="button" class="btn btn-secondary">Remove</button>
-                </div>                                    
-            </li>
+{% if cart_items %}
+<table class="table">
+    <thead>
+        <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+        <th scope="col"></th>
+        </tr>
+        </thead>
+    <tbody>
+        {% for item in cart_items %}  
+            <tr>
+            <td>{{item}}</td>
+            <td>9.99</td>
+            <td>1</td>
+            <td><button type="button" class="btn btn-danger">X</button></td>
+            </tr>           
         {% endfor %}
-        </ul>
-        <button type="button" class="btn btn-primary">Checkout</button>
+    </tbody>
+    </table>
+    <button type="button" class="btn btn-primary">Checkout</button>
     {% else %}
         <p>No products are available.</p>
     {% endif %}

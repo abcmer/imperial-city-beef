@@ -23,7 +23,7 @@ def product_detail(request, product_id):
         raise Http404('Product does not exist')
 
 def cart(request):
-    cart_items = Cart.objects.filter(customer_id='9e4cdba9-17db-4c8e-87d0-df28ad428c79').select_related('product')    
+    cart_items = Cart.objects.filter(customer_id='ab3cb7e8-12a8-4c9a-9c51-21e8925dd70f').select_related('product') 
     context = {'cart_items': cart_items}
     return render(request, 'erp/cart.html', context)        
 
