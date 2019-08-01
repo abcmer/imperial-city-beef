@@ -64,6 +64,12 @@ Navigate to http://localhost:8000 in your web browser of choice. Enjoy!
 -   [Django](https://www.djangoproject.com/)
 -   [Bootstrap](https://getbootstrap.com/)
 
+## Learning Goals
+
+-   Design ERP system with postgres backend
+-   Production grade security
+-   User authentication with Django
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
