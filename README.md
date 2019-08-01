@@ -57,7 +57,7 @@ Start the development server
 python manage.py runserver
 ```
 
-Navigate to http://localhost:8000 in your web browser of choice. Enjoy!
+Navigate to http://localhost:8000/erp in your web browser of choice. Enjoy!
 
 ## Built With
 
