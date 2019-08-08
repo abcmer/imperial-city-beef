@@ -82,7 +82,7 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'USER': 'imperial_user',
         'PASSWORD': 'imperial_user',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '5432',        
     }
 }
