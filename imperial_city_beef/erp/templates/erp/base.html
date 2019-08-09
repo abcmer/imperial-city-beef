@@ -52,11 +52,20 @@
         <a class="nav-link" href="{% url 'erp:cart' 'ab3cb7e8-12a8-4c9a-9c51-21e8925dd70f' %}">Cart</a>
       </li>
     </ul>
-    <ul class="navbar-nav my-2 my-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" href="">Account</a>
-      </li>
-    </ul>
+    {% if user %}
+      <ul class="navbar-nav my-2 my-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{user}}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{% url 'social:begin' 'google-oauth2' %}">
+              Login
+            </a>
+            <a class="dropdown-item" href="{% url 'erp:logout' %}">Logout</a>
+        </li>
+      </ul>
+    {% endif %}
   </div>
 </nav>
 

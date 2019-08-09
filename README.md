@@ -66,9 +66,9 @@ Navigate to http://localhost:8000/erp in your web browser of choice. Enjoy!
 
 ## Learning Goals
 
--   Design ERP system with postgres backend (In progress)
+-   Design E-commerce site for hot dogs (In progress)
+-   Google user authentication (Complete)
 -   Production grade security (Not yet achieved)
--   User authentication with Django (Not yet achieved)
 
 ## License
 
