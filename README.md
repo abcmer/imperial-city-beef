@@ -57,7 +57,7 @@ Start the development server
 python manage.py runserver
 ```
 
-Navigate to http://localhost:8000 in your web browser of choice. Enjoy!
+Navigate to http://localhost:8000/erp in your web browser of choice. Enjoy!
 
 ## Built With
 
@@ -66,9 +66,9 @@ Navigate to http://localhost:8000 in your web browser of choice. Enjoy!
 
 ## Learning Goals
 
--   Design ERP system with postgres backend
--   Production grade security
--   User authentication with Django
+-   Design E-commerce site for hot dogs (In progress)
+-   Google user authentication (Complete)
+-   Production grade security (Not yet achieved)
 
 ## License
 
