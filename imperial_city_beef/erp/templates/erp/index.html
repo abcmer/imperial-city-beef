@@ -1,5 +1,6 @@
 {% extends 'erp/base.html' %}
 {% block content %}
+{% load static %}
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -9,13 +10,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://thumbor.thedailymeal.com/QzURF10r6fwkUH-EuB6SnBDx7Ew=/870x565/filters:focal(750x481:751x482)/https://www.thedailymeal.com/sites/default/files/story/2018/chicago-istock.jpg" class="d-block w-100" alt="Chicago Hot Dog 1">
+            <img src="{% static 'images/hotdog1.jpg' %}" class="d-block w-100" alt="Chicago Hot Dog 1">
           </div>
           <div class="carousel-item">
-            <img src="https://imgix.bustle.com/rehost/2016/9/13/d1ba8446-d2b7-4683-a36a-3fc527bc8623.jpg?w=970&h=546&fit=crop&crop=faces&auto=format&q=70" class="d-block w-100" alt="Chicago Hot Dog 2">
+            <img src="{% static 'images/hotdog2.jpg' %}" class="d-block w-100" alt="Chicago Hot Dog 2">
           </div>
           <div class="carousel-item">
-            <img src="https://www.simplyrecipes.com/wp-content/uploads/2010/05/chili-dog-horiz-a-1600.jpg" class="d-block w-100" alt="Chilli cheese dog">
+            <img src="{% static 'images/hotdog3.jpg' %}" class="d-block w-100" alt="Chicago Hot Dog 3">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
