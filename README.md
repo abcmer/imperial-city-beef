@@ -66,9 +66,8 @@ Navigate to http://localhost:8000/erp in your web browser of choice. Enjoy!
 
 ## Learning Goals
 
--   Design E-commerce site for hot dogs (In progress)
--   Google user authentication (Complete)
--   Production grade security (Not yet achieved)
+-   Design E-commerce site for hot dogs
+-   Google user authentication
 
 ## License
 
